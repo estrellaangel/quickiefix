@@ -1,9 +1,93 @@
-#mainNav{
-    list-style: none;
+
+
+#menubar{
+    font-family: 'Montserrat', sans-serif;
+    z-index: 10;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(100,100,100);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    ul{
+    height: 100%;
+    list-style: none;  
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     justify-items: center;
     align-items: center;
-    margin: 0;
+    align-content: center;
+    z-index: 20;
+    li{
+        width: 30%;
+        color: white;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        // &#services{
+        //     border-right: 1px solid white;
+        // }
+        // &#cars{
+        //     border-right: 1px solid white;
+        // }
+    }
+    }
+}
+
+.topLogo{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    background-color: steelblue;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    img{
+        max-height: 30px;
+    }
+    padding: 5px;
+    
+}
+
+#carsMain{
+    img{
+        max-width: 100%;
+    }
+margin-bottom: 50px;
+}
+
+#profilePage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-between;
+    .top{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        font-size: 25px;
+        svg{
+            border: 1px solid grey;
+            border-radius: 50%;
+        }
+        margin-bottom: 20px;
+        margin-top: 120px;
+    }
+    .moreInfo{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        margin-bottom: 20px;
+    }
+    
 }

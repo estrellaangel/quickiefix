@@ -6,28 +6,46 @@
     <title>Quickiefix</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <nav class="navbar" >
-        <div >
-            <ul id="mainNav" class="navbar-nav" id="navbarText">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-              </ul>
-        </div>
-      </nav>
+    <div class="topLogo">
+        <div class="logo"> <img src="quickLogo.png" alt="nug"> </div>
+        <div class="name">Quickiefix</div>
+    </div>
+
+    <nav id="menubar">
+        <ul class="nav">
+            <li class="services" id="services">
+                <a href="index.html">
+                    <svg fill="white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-tools" viewBox="0 0 16 16">
+                        <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
+                        </svg>
+                </a>
+            </li>
+            <li class="cars" id="cars">
+                <a href="cars.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-truck" viewBox="0 0 16 16">
+                        <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                        </svg>
+                </a>
+            </li>
+            <li class="profile" id="profile">
+                <a href="profile.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                        </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
             <!-- Main Layout -->
-            <main class="mt-5">
+            <main class="mt-1">
                 <!-- Main Container -->
                 <div class="container">
                     <!-- Row -->
@@ -90,25 +108,6 @@
                         </div>
                         <div class="col-lg-4 col-md-5 mt-4">
                             <!-- Card -->
-                                <div class="card">
-                                    <!-- Card Img -->
-                                    <div class="view-overlay">
-                                        <img src="https://images.pexels.com/photos/5965927/pexels-photo-5965927.jpeg?cs=srgb&dl=pexels-charlotte-may-5965927.jpg&fm=jpg" alt="bs3-img" class="card-img-top">
-                                        <a href="#">
-                                            <div class="mask rgba-white-slight"></div>
-                                        </a>
-                                    </div>
-                                    <!-- Card Body -->
-                                    <div class="card-body">
-                                        <h4 class="card-title">Card Title</h4>
-                                        <p class="card-text">
-                                            peijgpawijep ewoj wri wprijgpqjeagrfj wprg9jpr9 gjwp-9rj jg0j
-                                            wjej0wijf0iwj09w0 0jrg09jr0 r0jw0rgj0w9rgj 0w9r g0w9rjg
-                                            wrjgiwjr0gj0wrjg0 0wrg0w9r 0
-                                        </p>
-                                        <a href="#" class="btn bg-dark text-white">Button for Ice</a>
-                                    </div>
-                                </div>
                         </div>
                     </div>
     
@@ -116,6 +115,7 @@
                 <!-- /Main Container -->
             </main>
             <!-- /main Layout -->
+
     
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
